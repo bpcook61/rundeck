@@ -26,6 +26,7 @@ _Store
 .ruby-version
 .ruby-gemset
 .rvmrc
+.DS_Store
 
 # YARD artifacts
 .yardoc
