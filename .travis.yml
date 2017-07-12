@@ -2,6 +2,8 @@ language: ruby
 
 cache: bundler
 
+bundler_args: --retry 5
+
 sudo: required
 
 dist: trusty
