@@ -32,7 +32,7 @@ suites:
           # Logger::DEBUG
           log_level: 0
       domain: kitchentest
-  - name: default-2.6.11
+  - name: default-2.6.9
     run_list:
       - recipe[rundeck::server]
       - recipe[create_chef_dir]
@@ -40,30 +40,10 @@ suites:
     attributes:
       rundeck:
         rpm:
-          version: rundeck-2.6.11-1.23.GA
+          version: rundeck-2.6.9-1.21.GA
         deb:
-          package: rundeck-2.6.11-1-GA.deb
+          package: rundeck-2.6.9-1-GA.deb
         checksum: 93e98ae0ef850756643e7f1dfb9f83432820485cac3a51c67fa5ef8039182d0b
-        hostname: localhost
-        security_roles:
-          - superusers
-          - run_only_users
-        api_client_config:
-          # Logger::DEBUG
-          log_level: 0
-      domain: kitchentest
-  - name: default-2.8.3
-    run_list:
-      - recipe[rundeck::server]
-      - recipe[create_chef_dir]
-      - recipe[rundeck::chef-rundeck]
-    attributes:
-      rundeck:
-        rpm:
-          version: rundeck-2.8.3-1.32.GA
-        deb:
-          package: rundeck-2.8.3-1-GA.deb
-        checksum: 694e893c01260139784d4b812c82005e530753603c80e5753307c26fc6fbc9f4
         hostname: localhost
         security_roles:
           - superusers

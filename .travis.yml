@@ -15,17 +15,13 @@ env:
   - SUITE=chefspec
   - SUITE=lint
   - SUITE=default-centos-68
-  - SUITE=default-2611-centos-68
-  - SUITE=default-283-centos-68
+  - SUITE=default-269-centos-68
   - SUITE=default-centos-73
-  - SUITE=default-2611-centos-73
-  - SUITE=default-283-centos-73
+  - SUITE=default-269-centos-73
   - SUITE=default-ubuntu-1404
-  - SUITE=default-2611-ubuntu-1404
-  - SUITE=default-283-ubuntu-1404
+  - SUITE=default-269-ubuntu-1404
   - SUITE=default-ubuntu-1604
-  - SUITE=default-2611-ubuntu-1604
-  - SUITE=default-283-ubuntu-1604
+  - SUITE=default-269-ubuntu-1604
 
 services:
   - docker
