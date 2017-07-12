@@ -43,7 +43,7 @@ suites:
           version: rundeck-2.6.9-1.21.GA
         deb:
           package: rundeck-2.6.9-1-GA.deb
-        checksum: 93e98ae0ef850756643e7f1dfb9f83432820485cac3a51c67fa5ef8039182d0b
+        checksum: 363c64a7643ae2e52db6b9d019c8593835123327959ae35c95050708d122066f
         hostname: localhost
         security_roles:
           - superusers
