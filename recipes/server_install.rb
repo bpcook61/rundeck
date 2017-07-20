@@ -181,7 +181,7 @@ template "#{node['rundeck']['configdir']}/rundeck-config.properties" do
   notifies (node['rundeck']['restart_on_config_change'] ? :restart : :nothing), 'service[rundeckd]', :delayed
 end
 
-template "/etc/init/rundeckd.conf" do
+template '/etc/init/rundeckd.conf' do
   owner 'root'
   group 'root'
   source 'rundeck-upstart.conf.erb'
